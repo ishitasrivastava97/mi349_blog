@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>About Blog</title>
+        <title>Contact Blog</title>
     </head>
     <body>
         <header>
@@ -19,33 +19,27 @@
         </nav>
         </header>
         <main>
-            <article>
-                <h2>About Festive Flavors</h2>
-                <address class="author">Ishita Srivastava</address>
-                <time datetime="2020-10-06" title="October 6, 2020">Oct 6, 2020</time>                <p>
-                    Greeting fellow foodies!
-                    Festive Flavors is a visually appealing storytelling of traditional forgotten recipes of India with some modern recipes in an easy to cook step by step process so that a new cook can learn how to cook and an experienced cook can have fun watching them. 
-                    This channel was started for the love of food, which I have learned from my Mother & Grandmother (Paternal Maternal) and they learned from their Mothers, and also over the years, my Mother developed new techniques which have been passed on to me.
-                    Another reason for starting this channel is that I love photography and videography. I thought, why not put it all together and start a food channel. Subscribe to the channel to receive new recipe updates. If you like the recipe please give us a thumbs up. I hope you will try the recipes and have fun as much as we had making them.
-                </p>
-                    <ul>
-                    <li>Collaborators, please contact festive@idigitalstock.com</li>
-                    <li>For videos and Photography visit-  <a href="www.idigitalstock.com">www.idigitalstock.com</a></li>
-                    <li>Festive Flavors is a part of iDigitalStock.com</li>
-                    </ul>
-                <p>My name is Ishita Srivastava, and I'm the writer for this blog dedicated to <a href="https://www.youtube.com/c/FestiveFlavors/videos">my mom's youtube channel.</a> I wanted to create this blog as a readable space for fellow foodies to come and read home recipes, as we don't always have the time in our busy days to watch videos. Here, pages can be bookmarked, and later referenced in the videos!</p>
-
-                    <img src="ishita.jpg" alt="A picture of the author." width="200" height="200">
-                    <p>I'm a junior at Michigan State University with a major in Media and Information, and a minor in Information Technology.</p>
-                    <p>Listed below are some of my hobbies:</p>
-                    <ul>
-                        <li>Reading</li>
-                        <li>Playing Piano</li>
-                        <li>Painting</li>
-                        <li>Cooking</li>
-                    </ul>
-                    <h5>Thanks for visiting!</h5>
-            </article>
+            <form action="contact.html" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="name">Enter your name: </label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-example">
+                  <label for="email">Enter your email: </label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-example">
+                    <label for="reason">Reason for contact: </label>
+                    <select id="reason" name="reason">
+                        <option value="sayingHi">Saying Hi</option>
+                        <option value="Looking-for-a-contractor">Looking for a Contractor</option>
+                        <option value="interested-in-an-interview">Interested in an Interview</option>
+                    </select>
+                  </div>
+                <div class="form-example">
+                  <input type="submit" value="Subscribe!">
+                </div>
+              </form>
         </main>
         <footer>
             <p>©Copyright 2020 by Ishita Srivastava. All rights reserved.</p>
