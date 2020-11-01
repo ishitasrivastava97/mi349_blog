@@ -28,23 +28,34 @@ p{
     padding: 20px;
 }
 
+div {
+    overflow: hidden;
+}
+
 /*id selector*/
 #blog {
     border-top: 1px dotted #ccc;
+    display: flex;
 }
 /*class selector*/
 .blog-post {
     border-bottom: 1px dotted #ccc;
+    flex: 50%;
 }
 /*attribute  selector*/
 a[href="https://www.youtube.com/channel/UClqvfV2okQC5GkHEuhzxFiw"] {
     color: #E18728;
 }
- 
+ /*Sign Up
+ .signup {
+
+ }
+
 /*Assets*/
 img {
     width: 25em;
     position: relative;
+    float: left;
 }
 .recipe-container {
     position: relative;
@@ -103,3 +114,8 @@ img {
 .navbar a:hover {
     background-color: #111;
 }
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+ }
