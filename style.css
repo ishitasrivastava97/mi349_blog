@@ -35,12 +35,18 @@ div {
 /*id selector*/
 #blog {
     border-top: 1px dotted #ccc;
-    display: flex;
+    /*display: flex;*/
 }
 /*class selector*/
-.blog-post {
+.blog-post-left, blog-post-right {
     border-bottom: 1px dotted #ccc;
     flex: 50%;
+}
+.blog-post-left {
+    margin-right: 2em;
+}
+.blog-post-right {
+    margin-left: 2em;
 }
 /*attribute  selector*/
 a[href="https://www.youtube.com/channel/UClqvfV2okQC5GkHEuhzxFiw"] {
@@ -115,7 +121,17 @@ img {
     background-color: #111;
 }
 .sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
+ }
+
+ /*Media Queries*/
+ @media (max-width: 400px) {
+    .article .blog-post-left, .blog-post-right {
+        width: 100%;
+        padding: 0;
+    }
+    .body {
+        background-color: #ccc;
+    }
  }
